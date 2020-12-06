@@ -24,7 +24,61 @@ a {
   text-decoration: none;
   color: #fff;
 }
+/* ================================================
+-------------------loader Styles------------------
+=================================================*/
+.loader{
+  width: 100vw;
+  height: 100vh;
+  background-color: #00623f;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 4s 1;
 
+  opacity: 0;
+  transition: ease-out 1s;
+}
+.loader .loader-logo{
+  width: 250px;
+  animation:loader-logo 2s 0.5s 1;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.loader .loader-logo img{
+  width: 100%;
+}
+@media only screen and (max-width:500px){
+  .loader .loader-logo{
+    width: 200px
+  }
+}
+@keyframes loader{
+ 0%{
+   
+   opacity: 1;
+ }
+ 70%{
+
+   opacity: 1;
+ }
+ 100%{
+   opacity: 0;
+
+ }
+}
+@keyframes loader-logo{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 /* ================================================
 -------------------Main Styles------------------
 =================================================*/
@@ -129,6 +183,7 @@ a {
 /* ================================================
 -------------Responsive Nav Styles----------------
 =================================================*/
+
 @media only screen and (max-width: 375px) {
   .main-wraper header nav {
     width: 100%;
