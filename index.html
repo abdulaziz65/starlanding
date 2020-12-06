@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <!-- ---------------Icons Style link----------- -->
+	<link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="icon" type="image/svg" href="images/Logo.svg">
+
+    <title>Starbucks</title>
+</head>
+<body>
+    <div class="main-wraper">
+            <header>
+                <div class="right-section"></div>
+                <nav>
+                    <div class="nav-con">
+                        <div class="logo">
+                            <img src="images/Logo.svg" alt="">
+                        </div>
+                        <div class="menu">
+                            <ul class="menu-list">
+                                <li><a href="">Coffee</a></li>
+                                <li><a href="">Tea</a></li>
+                                <li><a href="">Get Cards</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header-con">
+                    <div class="header-col-1">
+                        <div class="header-text-con">
+                            <div class="header-text">
+                                <h3>Grab your</h3>
+                                <h1 id="h1">Frappuccino!</h1>
+                                <p>Introduced in 1995. It contains of coffee or cream base, blended with ice and other various
+                                    ingredients, usually topped with whipped cream and sauces.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="header-cards-con">
+                            <input type="radio" name="crsl-radio" id="crsl-left" style="display: none;">
+                            <input type="radio" name="crsl-radio" id="crsl-right" style="display: none;">
+                            <label for="crsl-left" class="crsl-btn" id="crsl-btn-left"> <i class="fa fa-chevron-left"></i> </label>
+                            <label for="crsl-right" class="crsl-btn" id="crsl-btn-right"> <i class="fa fa-chevron-right"></i> </label>
+                            
+                            <div class="header-cards">
+                                <div class="header-card">
+                                    <div class="header-card-img">
+                                        <input type="radio" name="checkbox" id="chkbox1" onclick="myFunction()" class="checkbox">
+                                        <label for="chkbox1">
+                                            <img src="images/image1.png" alt="">
+                                        </label>
+                                    </div>
+                                </div> <!-- card -1 -->
+
+                                <div class="header-card">
+                                    <div class="header-card-img">
+                                        <input type="radio" name="checkbox" id="chkbox2" onclick="myFunction()" class="checkbox">
+                                        <label for="chkbox2">
+                                            <img src="images/image2.png" alt="">
+                                        </label>
+                                    </div>
+                                </div><!-- card -2 -->
+
+                                <div class="header-card">
+                                    <div class="header-card-img">
+                                        <input type="radio" name="checkbox" id="chkbox3" onclick="myFunction()" class="checkbox">
+                                        <label for="chkbox3">
+                                            <img src="images/image3.png" alt="">
+                                        </label>
+                                    </div>
+                                </div><!-- card -3 -->
+
+
+
+                                <div class="header-card">
+                                    <div class="header-card-img">
+                                        <input type="radio" name="checkbox" id="chkbox4" onclick="myFunction()" class="checkbox">
+                                        <label for="chkbox4">
+                                            <img src="images/image4.png" alt="">
+                                        </label>
+                                    </div>
+                                </div> <!-- card -4 -->
+
+                                <div class="header-card">
+                                    <div class="header-card-img">
+                                        <input type="radio" name="checkbox" id="chkbox5" onclick="myFunction()" class="checkbox">
+                                        <label for="chkbox5">
+                                            <img src="images/image5.png" alt="">
+                                        </label>
+                                    </div>
+                                </div><!-- card -5 -->
+
+                                <div class="header-card">
+                                    <div class="header-card-img">
+                                        <input type="radio" name="checkbox" id="chkbox6" onclick="myFunction()" class="checkbox">
+                                        <label for="chkbox6">
+                                            <img src="images/image2.png" alt="">
+                                        </label>
+                                    </div>
+                                </div><!-- card -6 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-col-2">
+                        <div class="header-img" id="header-img">
+                            <img src="images/image1.png" alt=""  id="img1">
+                            <img src="images/image2.png" alt=""  id="img2">
+                            <img src="images/image3.png" alt=""  id="img3">
+                            <img src="images/image4.png" alt=""  id="img4">
+                            <img src="images/image5.png" alt=""  id="img5">
+                            <img src="images/image2.png" alt=""  id="img6">
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- <script>
+            $(document).ready(function(){
+                $('input:checkbox').click(function() {
+                    $('input:checkbox').not(this).prop('checked', false);
+                });
+            });
+            </script> -->
+        <script src="assets/js/main.js"></script>
+</body>
+</html>

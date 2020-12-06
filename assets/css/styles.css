@@ -1,0 +1,994 @@
+/******************************************************************
+  Template Name: Starbucks
+  Description:  starbucks static Template
+  Author: Abdul Aziz | Front End Dev
+  Author URI: http://devfolio.cf
+  Author Email: abdulaziz652369@gmail.com
+  Version: 1.0
+  Created: Abdul Aziz
+******************************************************************/
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ================================================
+-------------------Main Styles------------------
+=================================================*/
+
+.main-wraper {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+}
+.main-wraper header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #00623f;
+  overflow: hidden;
+}
+.main-wraper header .right-section {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #e5ba81;
+}
+@media only screen and (max-width: 500px) {
+  .main-wraper header .right-section {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e5ba81;
+  }
+}
+
+/* ================================================
+-------------------Nav Styles------------------
+=================================================*/
+
+.main-wraper header nav {
+  width: 100%;
+  height: 15vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+.main-wraper header nav .nav-con {
+  width: 90%;
+  position: absolute;
+  display: flex;
+  left: 4%;
+  top: 6vh;
+}
+.main-wraper header nav .nav-con .logo {
+  width: 5%;
+  height: 100%;
+}
+.main-wraper header nav .nav-con .logo img {
+  width: 100%;
+}
+.main-wraper header nav .nav-con .menu {
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+}
+.main-wraper header nav .nav-con .menu .menu-list li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.main-wraper header nav .nav-con .menu .menu-list li a {
+  font-size: 0.87rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 500px) {
+  .main-wraper header nav {
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+  .main-wraper header nav .nav-con {
+    width: 90%;
+    position: absolute;
+    display: flex;
+    left: 4%;
+    top: 3vh;
+  }
+  .main-wraper header nav .nav-con .logo {
+    width: 10%;
+    height: 100%;
+  }
+}
+/* ================================================
+-------------Responsive Nav Styles----------------
+=================================================*/
+@media only screen and (max-width: 375px) {
+  .main-wraper header nav {
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+  .main-wraper header nav .nav-con {
+    width: 90%;
+    position: absolute;
+    display: flex;
+    left: 4%;
+    top: 3vh;
+  }
+  .main-wraper header nav .nav-con .logo {
+    width: 10%;
+    height: 100%;
+  }
+  .main-wraper header nav .nav-con .menu {
+    padding-left: 20px;
+  }
+  .main-wraper header nav .nav-con .menu .menu-list li {
+    margin: 0 10px;
+  }
+  .main-wraper header nav .nav-con .menu .menu-list li a {
+    font-size: 0.77rem;
+  }
+}
+/* ====================================================
+-----------------Header Left Section---------------------
+==================================================== */
+.main-wraper header .header-con {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  top: 0;
+  display: flex;
+}
+.main-wraper header .header-con .header-col-1 {
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+.main-wraper header .header-con .header-col-1 .header-text-con {
+  width: 100%;
+  height: 55vh;
+  position: relative;
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+  animation: text-animate 0.8s;
+  transition: all 0.5s;
+}
+.main-wraper header .header-con .header-col-1 .header-text-con .header-text {
+  position: relative;
+  top: 15%;
+  left: 8%;
+}
+.main-wraper header .header-con .header-col-1 .header-text-con .header-text h3 {
+  font-size: 2rem;
+  position: absolute;
+  left: 12%;
+  top: 6%;
+}
+.main-wraper header .header-con .header-col-1 .header-text-con .header-text h1 {
+  font-size: 7rem;
+}
+.main-wraper header .header-con .header-col-1 .header-text-con .header-text p {
+  font-size: 0.8rem;
+  width: 50%;
+  margin-top: 30px;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+/* ====================================================
+-----------------Cards-Section---------------------
+==================================================== */
+
+.main-wraper header .header-con .header-col-1 .header-cards-con {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 0 60px 0 0;
+  animation: cards-animate 0.6s;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.main-wraper header .header-con .header-col-1 .header-cards-con .crsl-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* background-color: #00623f; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.main-wraper header .header-con .header-col-1 .header-cards-con .crsl-btn i {
+  color: #00623f;
+  font-size: 1.6rem;
+}
+.main-wraper header .header-con .header-col-1 .header-cards-con #crsl-btn-left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-wraper
+  header
+  .header-con
+  .header-col-1
+  .header-cards-con
+  #crsl-btn-right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-wraper header .header-con .header-col-1 .header-cards-con .header-cards {
+  width: 200%;
+  position: absolute;
+  bottom: 0;
+  left: -12px;
+  display: flex;
+  justify-content: space-evenly;
+  transition: all 0.5s;
+}
+#crsl-left:checked ~ .header-cards {
+  left: -12px;
+}
+#crsl-right:checked ~ .header-cards {
+  left: -98.3%;
+}
+/* ====================================================
+---------------Header Right-Section--------------------
+==================================================== */
+.main-wraper
+  header
+  .header-con
+  .header-col-1
+  .header-cards-con
+  .header-cards
+  .header-card {
+  width: 12.5%;
+  height: 15vh;
+  border-radius: 30px 30px 0 0;
+  background-color: #00623f;
+  position: relative;
+  bottom: 0;
+}
+.main-wraper
+  header
+  .header-con
+  .header-col-1
+  .header-cards-con
+  .header-cards
+  .header-card
+  .header-card-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+#chkbox1,
+#chkbox2,
+#chkbox3,
+#chkbox4,
+#chkbox5,
+#chkbox6 {
+  display: none;
+}
+.main-wraper
+  header
+  .header-con
+  .header-col-1
+  .header-cards-con
+  .header-cards
+  .header-card
+  .header-card-img
+  label {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+.main-wraper
+  header
+  .header-con
+  .header-col-1
+  .header-cards-con
+  .header-cards
+  .header-card
+  .header-card-img
+  label
+  img {
+  width: 55%;
+  transition: all 0.2s;
+}
+.main-wraper
+  header
+  .header-con
+  .header-col-1
+  .header-cards-con
+  .header-cards
+  .header-card:hover
+  label
+  img {
+  width: 58%;
+}
+
+/* ====================================================
+-----------------Cards functions Syles----------------
+==================================================== */
+
+
+#chkbox1:checked ~ label img {
+  width: 58%;
+}
+#chkbox2:checked ~ label img {
+  width: 64%;
+}
+#chkbox3:checked ~ label img {
+  width: 66%;
+}
+#chkbox4:checked ~ label img {
+  width: 58%;
+}
+#chkbox5:checked ~ label img {
+  width: 64%;
+}
+#chkbox6:checked ~ label img {
+  width: 66%;
+}
+
+.main-wraper header .header-con .header-col-2 {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  animation: col2-animate 0.5s;
+  transition: all 0.5s;
+}
+.main-wraper header .header-con .header-col-2 .header-img {
+  padding-left: 5%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.main-wraper header .header-con .header-col-2 .header-img img {
+  width: 68%;
+}
+#img1 {
+  display: block;
+  transform: scale(1);
+  position: absolute;
+}
+#img2,
+#img3,
+#img4,
+#img5,
+#img6 {
+  display: block;
+  position: absolute;
+  transform: scale(0);
+}
+
+
+/* ==============================================
+------------- --Animations -------------------
+============================================== */
+@keyframes text-animate {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes cards-animate {
+  0%{
+    bottom:-100%;
+  }
+  50%{
+    bottom:-100%;
+  }
+  100%{
+    bottom:0;
+  }
+}
+@keyframes col2-animate {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+
+@keyframes h-image-anim-1 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+@keyframes h-image-anim-2 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+@keyframes h-image-anim-3 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+@keyframes h-image-anim-4 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+@keyframes h-image-anim-5 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+@keyframes h-image-anim-6 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+@keyframes text-anim1 {
+  0% {
+    transform-origin: left;
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes text-anim2 {
+  0% {
+    transform-origin: left;
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes text-anim3 {
+  0% {
+    transform-origin: left;
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes text-anim4 {
+  0% {
+    transform-origin: left;
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes text-anim5 {
+  0% {
+    transform-origin: left;
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes text-anim6 {
+  0% {
+    transform-origin: left;
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes card-anim{
+  from{
+    bottom:-100%;
+  }
+  to{
+    bottom:0;
+  }
+}
+
+/* ==============================================
+------------Responsive header styles-------------
+============================================== */
+@media only screen and (max-width: 768px) {
+  .main-wraper header .header-con .header-col-1 .header-text-con .header-text {
+    position: relative;
+    top: 12%;
+    left: 8%;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-text-con
+    .header-text
+    h3 {
+    font-size: 1rem;
+    position: absolute;
+    left: 10%;
+    top: 0;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-text-con
+    .header-text
+    h1 {
+    font-size: 2.8rem;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-text-con
+    .header-text
+    p {
+    font-size: 0.7rem;
+    width: 80%;
+    margin-top: 10px;
+    line-height: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .main-wraper header .header-con .header-col-1 .header-cards-con {
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    border-radius: 0 60px 0 0;
+    animation: cards-animate 2s;
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+  .main-wraper header .header-con .header-col-1 .header-cards-con .crsl-btn {
+    width: 30px;
+    height:30px;
+  }
+  .main-wraper header .header-con .header-col-1 .header-cards-con .crsl-btn i {
+    color: #00623f;
+    font-size: 1.3rem;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-cards-con
+    #crsl-btn-left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-cards-con
+    #crsl-btn-right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-cards-con
+    .header-cards {
+    left: -10px;
+  }
+  @keyframes text-animate {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @keyframes cards-animate {
+    from {
+      bottom: -100%;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+  @keyframes col2-animate {
+    from {
+      right: -100%;
+    }
+    to {
+      right: 0;
+    }
+  }
+
+  #img1 {
+    display: block;
+    transform: scale(1);
+    position: absolute;
+  }
+  #img2,
+  #img3,
+  #img4,
+  #img5,
+  #img6 {
+    display: block;
+    position: absolute;
+    transform: scale(0);
+  }
+  @keyframes h-image-anim-1 {
+    0% {
+      bottom: 0%;
+    }
+    50% {
+      bottom: -100%;
+    }
+    100% {
+      bottom: 0%;
+    }
+  }
+  @keyframes h-image-anim-2 {
+    0% {
+      bottom: 0%;
+    }
+    50% {
+      bottom: -100%;
+    }
+    100% {
+      bottom: 0%;
+    }
+  }
+  @keyframes h-image-anim-3 {
+    0% {
+      bottom: 0%;
+    }
+    50% {
+      bottom: -100%;
+    }
+    100% {
+      bottom: 0%;
+    }
+  }
+  @keyframes text-anim1 {
+    0% {
+      transform-origin: left;
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes text-anim2 {
+    0% {
+      transform-origin: left;
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes text-anim3 {
+    0% {
+      transform-origin: left;
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+/* =====================================================
+------------Mobile Responsive header styles-------------
+===================================================== */
+@media only screen and (max-width: 500px) {
+  .main-wraper header .header-con {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-wraper header .header-con .header-col-1 {
+    position: relative;
+    width: 100%;
+    height: 70%;
+  }
+  .main-wraper header .header-con .header-col-1 .header-text-con {
+    width: 90%;
+    height: 25vh;
+    position: relative;
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    animation: text-animate 1s;
+    transition: all 0.5s;
+  }
+  .main-wraper header .header-con .header-col-1 .header-text-con .header-text {
+    position: relative;
+    top: 10%;
+    left: 8%;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-text-con
+    .header-text
+    h3 {
+    font-size: 1rem;
+    position: absolute;
+    left: 16%;
+    top: 3%;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-text-con
+    .header-text
+    h1 {
+    font-size: 3.3rem;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-text-con
+    .header-text
+    p {
+    font-size: 0.67rem;
+    width: 100%;
+    margin-top: 15px;
+    line-height: 14px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .main-wraper header .header-con .header-col-1 .header-cards-con {
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    bottom: -27vh;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    animation: cards-animate 2s;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  @keyframes cards-animate {
+    from {
+      bottom: -100%;
+    }
+    to {
+      bottom: -27vh;
+    }
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-cards-con
+    .header-cards
+    .header-card {
+    width: 12.5%;
+    height: 6vh;
+    border-radius: 30px 30px 0 0;
+    background-color: #00623f;
+    position: relative;
+    bottom: 0;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-cards-con
+    .header-cards
+    .header-card
+    .header-card-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-cards-con
+    .header-cards
+    .header-card
+    .header-card-img
+    label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-cards-con
+    .header-cards
+    .header-card
+    .header-card-img
+    label
+    img {
+    width: 55%;
+    max-width: 55%;
+    height: 70%;
+    transition: all 0.2s;
+  }
+  .main-wraper
+    header
+    .header-con
+    .header-col-1
+    .header-cards-con
+    .header-cards
+    .header-card:hover
+    label
+    img {
+    width: 58%;
+  }
+  .main-wraper header .header-con .header-col-2 {
+    width: 100%;
+    height: 30%;
+    top: 28%;
+    position: absolute;
+    animation: col2-animate 1s;
+    transition: all 0.5s;
+    z-index: 0;
+  }
+  .main-wraper header .header-con .header-col-2 .header-img {
+    padding-left: 5%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .main-wraper header .header-con .header-col-2 .header-img img {
+    width: 50%;
+  }
+
+  @keyframes col2-animate {
+    from {
+      right: -100%;
+      top: 28%;
+    }
+    to {
+      right: 0;
+      top: 28%;
+    }
+  }
+
+  @keyframes h-image-anim-1 {
+    0% {
+      bottom: 0%;
+    }
+    50% {
+      bottom: -200%;
+    }
+    100% {
+      bottom: 0%;
+    }
+  }
+  @keyframes h-image-anim-2 {
+    0% {
+      bottom: 0%;
+    }
+    50% {
+      bottom: -200%;
+    }
+    100% {
+      bottom: 0%;
+    }
+  }
+  @keyframes h-image-anim-3 {
+    0% {
+      bottom: 0%;
+    }
+    50% {
+      bottom: -200%;
+    }
+    100% {
+      bottom: 0%;
+    }
+  }
+}
